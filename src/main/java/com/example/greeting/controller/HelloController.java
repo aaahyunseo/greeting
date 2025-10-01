@@ -10,10 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/greeting")
+@RequestMapping("/hello")
 public class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping
     public Map<String, Object> hello() {
         Map<String, Object> response = new HashMap<>();
         response.put("koreaTime", ZonedDateTime.now(ZoneId.of("Asia/Seoul")).toString());
