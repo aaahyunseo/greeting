@@ -18,7 +18,7 @@ public class HelloController {
         Map<String, Object> response = new HashMap<>();
         response.put("koreaTime", ZonedDateTime.now(ZoneId.of("Asia/Seoul")).toString());
         response.put("timestamp", System.currentTimeMillis());
-        response.put("message", "Hello, World");
+        response.put("message", "Hello, World!");
         return response;
     }
 
